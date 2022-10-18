@@ -1,0 +1,73 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.box {
+    flex: 1;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://images.unsplash.com/photo-1666012710762-1c5e258adf99");
+    background-position: center;
+    background-size: cover;
+}
+
+/* Add media query for small screens up to 480px */
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+/* Add media query for medium screens between 481px and 811px */
+@media (min-width: 481px) and (max-width: 811px) {
+    .container {
+        flex-direction: row-reverse;
+    }
+}
+
+/* px: absolute unit */
+#px-font {
+    font-size: 32px;
+}
+
+/* rem: relative unit, depends on the font-size of the root element */
+#rem-font {
+    font-size: 2rem;
+}
+
+#em-font-container {
+    font-size: 64px;
+}
+
+/* em: relative unit, depends on the font-size of the parent element */
+#em-font {
+    font-size: 0.5em;
+}
+
+/* vw/vh: relative unit, depends on the size of the viewport */
+#unit-container {
+    width: 50vw;
+    height: 50vh;
+    background-color:blueviolet;
+}
+
+/* %: relative unit, depends on the size of the parent element */
+#unit-box {
+    width: 50%;
+    height: 50%;
+    background-color: coral;
+}
+

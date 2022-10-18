@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Select indirect descendants -->
+    <section>
+        <ul id="indirect-list">
+            <li class="menu-item">Menu item 1</li>
+            <li class="menu-item">Menu item 2</li>
+            <li class="menu-item">Menu item 3</li>
+            <li class="menu-item">Menu item 4</li>
+            <div>
+                <li class="menu-item">Menu item 5</li>
+            </div>
+        </ul>
+    </section>
+
+    <!-- Select direct descendants -->
+    <section>
+        <ul id="direct-list">
+            <li>Menu item 1</li>
+            <li>Menu item 2</li>
+            <li>Menu item 3</li>
+            <li>Menu item 4</li>
+            <div>
+                <li>Menu item 5</li>
+            </div>
+        </ul>
+    </section>
+
+    <!-- Select next sibling -->
+    <section>
+        <div id="next-sibling">
+            <div>div 1</div>
+            <div>div 2</div>
+            <div>div 3</div>
+            <div id="former">div before target</div>
+            <div>target div</div>
+        </div>
+    </section>
+
+    <!-- Select multiple elements -->
+    <section>
+        <div>
+            <div class="standard">standard</div>
+            <div class="standard">standard</div>
+            <div class="one-element">one-element</div>
+            <div class="standard">standard</div>
+            <div class="another-element">another-element</div>
+        </div>
+    </section>
+
+    <!-- Attribute selector: Attribute contains content -->
+    <section>
+        <a href="https://www.google.de">Google</a>
+        <a href="https://www.ironhack.com">Ironhack</a>
+        <a href="https://www.github.com">Github</a>
+        <a href="https://en.wikipedia.org/wiki/hacker">Wikipedia</a>
+    </section>
+
+    <!-- Other attribute selectors -->
+    <section>
+        <span lang="en-us">Hello World</span>
+        <span lang="en-gb">Hello World</span>
+        <span lang="pt">Olá Mundo</span>
+        <span lang="fr">Bonjour monde</span>
+        <span lang="de">Hallo Welt</span>
+        <span>Hallo Welt</span>
+    </section>
+
+
+
+</body>
+</html>

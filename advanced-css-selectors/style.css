@@ -1,0 +1,40 @@
+.menu-item {
+    background-color: blue;
+    color: white;
+}
+
+#indirect-list li {
+    background-color: red;
+    color: white;
+}
+
+#direct-list > #selected {
+    background-color: red;
+    color: white;
+}
+
+#former + div {
+    background-color: blue;
+    color: white;
+}
+
+.one-element, .another-element {
+    background-color: orange;
+    color: white;
+}
+
+a[href*="hack"] {
+    font-weight: bold;
+}
+
+span[lang] {
+    font-weight: bold;
+}
+
+span[lang="pt"] {
+    color:darkturquoise;
+}
+
+span[lang^="en"] {
+    color:chartreuse;
+}
